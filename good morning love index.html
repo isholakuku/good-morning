@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Morning!</title>
+  </head>
+  <body>
+    <h1>Good morning my love ❤️</h1>
+    <form id="morningForm">
+      <label for="sleep">Did you sleep well?</label><br />
+      <input type="text" id="sleep" name="sleep" /><br /><br />
+
+      <label for="dream">Did you dream about me?</label><br />
+      <input type="text" id="dream" name="dream" /><br /><br />
+
+      <label for="miss">Did you miss me?</label><br />
+      <input type="text" id="miss" name="miss" /><br /><br />
+
+      <label for="howMuch">How much do you miss me?</label><br />
+      <input type="text" id="howMuch" name="howMuch" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p id="finalMessage" style="display: none">
+      I miss you too and I love you 😘 I'm off to the café to study, talk to you
+      later ❤️
+    </p>
+
+    <script>
+      document
+        .getElementById("morningForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          document.getElementById("finalMessage").style.display = "block";
+        });
+    </script>
+  </body>
+</html>
